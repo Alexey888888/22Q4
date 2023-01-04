@@ -115,7 +115,7 @@ body {
 }
 
 .h1-welcome {
-    margin: auto;
+    margin: 0 auto;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -274,18 +274,16 @@ right: 100px;
 }
 
 .layout-3-column {
-    padding: 0;
-    box-sizing: border-box;
-    max-width: 1222px;
-    height: 955px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    position: relative;
-    top: 130px;
-    left: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 116px;
+    row-gap: 30px;
+    padding-top: 230px;
+    padding-left: 9px;
+
+    
 }
+
 
 .item-wrapper {
     border: 1px solid #E3E1D5;
@@ -501,7 +499,7 @@ summary {
     background-position: 110px bottom;
 }
 
-.wrapper-contacts-content {
+.wrapper-contacts {
     box-sizing: border-box;
     width: 1007px;
     height: 94px;

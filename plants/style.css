@@ -396,6 +396,7 @@ img {
 }
 
 .menu-city {
+  position: relative;
   width: 450px;
   height: 50px;
   background: #d6e7d2;
@@ -419,6 +420,12 @@ img {
   letter-spacing: 0.05em;
   color: #717171;
   padding-left: 20px;
+}
+
+.act {
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
 }
 
 .contacts__arrow {
@@ -458,4 +465,126 @@ img {
 
 .social__item {
   margin-right: 20px;
+}
+
+/* select_city*/
+.contacts-inner {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+.select-box {
+  position: absolute;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  background: #dce9d9;
+
+  opacity: 0;
+  transition: 0.9s;
+
+  visibility: hidden;
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.select-box-container {
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+  color: #499a18;
+  margin: 0px 0 25px 0;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 27px;
+  margin-bottom: 31px;
+}
+
+.city-name {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 12px;
+}
+
+.city-name:hover {
+  border-bottom: 1px solid #717171;
+  color: #717171;
+}
+
+.city__info {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 27px 33px 32px;
+  background: #edf2ec;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  width: 100%;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.9s;
+
+  top: 47px;
+}
+
+.actives {
+  opacity: 1;
+  visibility: visible;
+}
+
+.row {
+  line-height: 40px;
+  display: flex;
+}
+
+.city__value {
+  margin-left: 93px;
+  color: #717171;
+}
+
+.phone__value {
+  margin-left: 67px;
+  color: #717171;
+}
+
+.office__value {
+  margin-left: 15px;
+  color: #717171;
+}
+
+.office__button {
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  margin-top: 30px;
+  margin-left: 130px;
+  border-radius: 5px;
+  border: 1px solid #e06733;
+  color: #717171;
+  width: 122px;
+  height: 26px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.9s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.office__button:hover {
+  background-color: #e06733;
+  color: white;
+}
+
+.contacts__arraw__active {
+  transform: rotate(180deg);
 }

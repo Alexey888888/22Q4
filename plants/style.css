@@ -214,6 +214,11 @@ h1 span {
   color: #ffffff;
 }
 
+.bbc-active {
+  background: #e06733;
+  color: #ffffff;
+}
+
 .service__wrapper-2 {
   display: flex;
   flex-wrap: wrap;
@@ -228,6 +233,12 @@ img {
 
 .services__card {
   margin-bottom: 55px;
+  transition: 0.9s;
+}
+
+.blur {
+  filter: blur(3px);
+  transition: 0.9s;
 }
 
 .card__description {

@@ -22,7 +22,7 @@ function showDate() {
   dateOnPage.innerHTML = currentDate;
 }
 
-function getTimeOfDay() {
+export function getTimeOfDay() {
   const date = new Date();
   const hour = date.getHours();
   const arrTimeofDay = ["night", "morning", "afternoon", "evening"];

@@ -35,12 +35,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 120px;
+  width: 160px;
   margin-bottom: 28px;
 }
 
 .play-list {
   text-align: left;
+  position: relative;
+  bottom: 12px;
 }
 
 .play-item {

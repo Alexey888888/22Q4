@@ -245,10 +245,10 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+
   align-items: center;
   width: 100%;
-  height: 30vh;
+
   min-height: 160px;
   padding: 20px;
 }
@@ -264,6 +264,25 @@ body {
 
 .author {
   min-height: 20px;
+}
+
+.fff {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  opacity: 0.3;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.year {
+  font-weight: 900;
+}
+
+.logo-git,
+.logo-rs {
+  width: 50px;
+  background-color: #fff;
 }
 
 @media (max-width: 768px) {

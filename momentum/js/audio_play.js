@@ -21,6 +21,7 @@ function makePlayList() {
     li.classList.add("play-item");
     li.textContent = el.title;
     playListContainer.append(li);
+
     playItem = document.querySelectorAll(".play-item");
   });
 }
@@ -88,12 +89,11 @@ audio.addEventListener(
     player.querySelector(".length").textContent = getTimeCodeFromNum(
       audio.duration
     );
-    audio.volume = 0.5;
+    //audio.volume = 0.5;
   },
   false
 );
 
-//click on timeline to skip around
 const timeline = player.querySelector(".timeline");
 timeline.addEventListener(
   "click",
@@ -105,14 +105,12 @@ timeline.addEventListener(
   false
 );
 
-//check audio percentage and update time accordingly
 setInterval(() => {
   const progressBar = player.querySelector(".progress");
   progressBar.style.width = (audio.currentTime / audio.duration) * 100 + "%";
   current.textContent = getTimeCodeFromNum(audio.currentTime);
 }, 500);
 
-//turn 128 seconds into 2:08
 function getTimeCodeFromNum(num) {
   let seconds = parseInt(num);
   let minutes = parseInt(seconds / 60);
@@ -141,7 +139,6 @@ player.querySelector(".icono-volumeMedium").addEventListener("click", () => {
   }
 });
 
-//click volume slider to change volume
 const volumeSlider = player.querySelector(".volume-slider");
 volumeSlider.addEventListener(
   "click",
